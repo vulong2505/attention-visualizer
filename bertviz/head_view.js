@@ -45,6 +45,7 @@ requirejs(["jquery", "d3"], function ($, d3) {
 
   function initialize() {
     config.attention = params["attention"];
+    console.log(config.attention);
     config.filter = params["default_filter"];
     config.rootDivId = params["root_div_id"];
     config.nLayers = config.attention[config.filter]["attn"].length;
